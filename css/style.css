@@ -1,0 +1,324 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#DAA520;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* header */
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom: #DAA520 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color: #DAA520;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* front */
+#front{
+  min-height:400px;
+  background:url('../img/print.jpg') no-repeat 0, -200px;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+  background-color: orange;
+}
+
+#front h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#front p{
+  font-size:20px;
+}
+
+/* newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:url('../img/pban.jpg');
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* sidebar */
+aside#sidebar{
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-top: 215px;
+}
+
+/*aside#sidebar .about{
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+}*/
+
+.about {
+  max-width: 328px;
+  float: right;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:95%;
+  padding:5px;
+}
+
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:10px;
+  margin-top:135px;
+  color:#ffffff;
+  background-color:#DAA520;
+  text-align: center;
+}
+
+/* Media */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #front h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+/*Price Boxes*/
+#price-box{
+  margin: 0;
+  padding: 0;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pricing-table{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.col{
+  flex: 25%;
+  padding: 10px;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.table{
+  background: #fff;
+  padding: 40px 27.5px;
+  font-family: "montserrat", sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070
+  border: 2px solid orange;
+}
+
+.table h2{
+  text-transform: uppercase;
+}
+
+.table ul{
+  margin: 0;
+  padding: 0;
+}
+
+.table ul li{
+  padding: 10px 0;
+  list-style: none;
+}
+
+/*Price Number*/
+.price{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.price span{
+  display: block;
+  font-size: 14px;
+}
+
+/*'BUY NOW button'*/
+.table a{
+  text-decoration: none;
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+  display: block;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s linear;
+}
+
+.table a:hover{
+  background: #2c3e50;
+  color: #fff;
+}
+
+.pop{
+  background: #2c3e50;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 16px;
+  right: -34px;
+}
+
+@media screen and (max-width:980px) {
+  .col{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .col{
+    flex: 100%;
+  }
+}
